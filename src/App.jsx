@@ -21,6 +21,8 @@ function App() {
   }, [length, numberAllow, charr]);
 
   const copyPassClip = () => {
+    passwordRef.current?.select();
+    // passwordRef.current?.setse
     navigator.clipboard.writeText(password);
   };
 
